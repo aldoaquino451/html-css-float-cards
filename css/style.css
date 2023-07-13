@@ -6,44 +6,73 @@
 }
 
 /* general  */
+
 body {
   font-family: 'Fredoka', sans-serif;
-  background-color: azure;
+  font-size: 12px;
 }
 
 header, main {
-  width: 1000px;
-  max-width: 80%;
-  margin: 50px auto;
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+header {
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #e53170;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
-.card {
-  display: inline-block; 
-  background-color: blueviolet;
-  margin-left: 20px;
-  height: 100px;
-  width: calc(30%);
+img {
+  height: 100%;
 }
+
+/* general flot  */
 
 .float-left {
   float: left;
 }
+
 .float-right {
   float: right;
 }
 
-.card img {
-  height: 100%;
-}
 .clearfit::after {
   content: "";
   display: table;
   clear: both;
+}
+
+/* main  */
+
+.card {
+  display: inline-block;  
+  height: 80px;
+  min-width: 230px;
+  /* calc((100% - totaleMarginiOrizzontali ) / 3 */
+  width: calc((100% - 60px) / 3);
+  background-color: black;
+  color: white;
+  margin: 20px 15px 20px 0;
+  -webkit-box-shadow:  0 0 15px grey;
+}
+
+/* card  */
+
+.card h3 {
+  padding-bottom: 6px;
+}
+
+.info {
+  padding: 10px;
+}
+
+.email {
+  color: #45cce3;
+  padding-top: 6px;
 }
