@@ -33,6 +33,7 @@ main > *,
   float:left;
 }
 
+.clearfix,
 main::after,
 main > *::after {
   content: "";
